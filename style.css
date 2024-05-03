@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%; 
+  /*Variaveis de cores*/
+  --main-bg-color: linear-gradient(66deg, rgba(187,0,255,1) 0%, rgba(25,3,97,1) 100%);
+  --font-color: #34355B;
+  --button-color: #FF9500;
+  --button-color-hover: #e48500;
+}
+
+
+.hide{
+    display: none;
+}
+
+body{
+    background: var(--main-bg-color);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+button{
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 1.6rem;
+
+    font-size: 1.5rem;
+
+    transition: background .3s;
+    border-radius: .4rem;
+    background-color: var(--button-color);
+}
+
+button:hover{
+    background-color: var(--button-color-hover); 
+}
+
+main{
+
+    background-color: #FFFF;
+    border-radius: .6rem;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+
+    padding: 4.8rem 6.4rem 6.4rem;
+    text-align: center;
+    width: min(42.8rem, 90%);
+}
+
+main h1, h2, p{
+    color: var(--font-color);
+}
+
+main h1{
+    font-size: 2.4rem;
+}
+
+main p{
+    margin-top: 1.4rem;
+    font-size: 1.5rem;
+}
+
+main input{
+    max-width: 30.0rem;
+    margin-top: 2.0rem;
+    transition: transform 0.3s ease;
+}
+
+main input:hover{
+    transform: scale(1.1);
+}
